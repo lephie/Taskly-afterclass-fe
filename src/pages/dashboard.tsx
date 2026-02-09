@@ -24,7 +24,7 @@ export default function Dashboard(){
   const [IsDialogFormOpen, setIsDialogFormOpen] = useState<boolean>(false)
   const [isDialogDelete, setIsdialogDelete] = useState<boolean>(false)
 
-  const [currentTaskId, setCurrentTaskId] = useState<string>(''); // 
+  const [currentTaskId, setCurrentTaskId] = useState<string>('');  
   const [tasks, setTask] = useState<Task[]>([ ]) // buat set task
   const [title, setTitle] = useState<string>(''); // buat set title 
   const [description, setDescription] = useState<string>(''); // untuk set descripsi
@@ -155,8 +155,6 @@ export default function Dashboard(){
               </AlertDialogContent>
             </AlertDialogAction>
              </AlertDialog>
-
-
       </SidebarInset>
     </SidebarProvider>
   )
